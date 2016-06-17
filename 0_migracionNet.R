@@ -35,10 +35,10 @@ range(dat$w.norm)
 
 # plot
 quartz(width=7, height = 7, pointsize = 6)
-plot(net, edge.arrow.size = 0.4, vertex.size = 2, 
-     edge.width = E(net)$w.norm * 2, 
-     vertex.label = NULL,
-     vertex.color = 'orange'
+plot(net, edge.arrow.size = 0.2, vertex.size = 4, 
+     edge.width = E(net)$w.norm * 4, 
+     vertex.label = NULL, vertex.color = 'orange',
+     mark.groups = communities (c)
      )
 
 membership (c)
